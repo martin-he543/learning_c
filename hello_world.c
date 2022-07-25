@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <math.h>
 
-void main(){
+void main()
+{
     char input[80];
     int x, a, b, c;
     printf("Please input your name!\n");
@@ -13,7 +14,4 @@ void main(){
     printf("You are %d years old!\n", x);
 
     printf("%.02f\n", sqrt(x));
-    
-
-
 }
