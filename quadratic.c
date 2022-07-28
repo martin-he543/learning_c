@@ -8,7 +8,7 @@ void main()
 {
     int a, b, c;
     double delta, root1, root2;
-    printf("Let's solve quadritic equation.\n");
+    printf("Let's solve a quadratic equation.\n");
     printf("\nPlease input a:");
     a = getInteger();
 
