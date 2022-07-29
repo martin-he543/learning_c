@@ -1,0 +1,44 @@
+____________________________________
+FORMAT CHARACTERS
+%d - integers
+%f - floating points
+%b - binary
+%o - octal
+%x - octal hexadecimal
+%s - string
+%e - floating point exponents
+
+____________________________________
+ESCAPE SEQUENCES
+\\      backslash
+\'      single quote
+\"      double quote
+\a      ASCII bell (BEL)
+\b      ASCII backspace (BS)
+\f      ASCII formfeed (FF)
+\l      ASCII linefeed (LF)
+\r      ASCII carriage return (CR)
+\t      ASCII horizontal tab (TAB)
+\v      ASCII vertical tab
+
+\ooo    character with octal value oo
+\xhh    character with hex value hh
+
+\N{name}    character named in Unicode database (Unicode only)
+\uxxxx      character with 16-bit hex value (Unicode only)
+\uxxxxxxxx  character with 32-bit hex value (Unicode only)
+
+____________________________________
+SYSTEM IMPORTS
+from sys import argv        imports console argument variables (i.e. python3 filename arguments)
+
+____________________________________
+READING/WRITING TEXT FILES
+.open(filename,'_')         opens a file (optional modes: '_')
+                            'r' - reads the file, DEFAULT
+                            'w' - with writing privileges, truncating first
+                            'x' - creates new file
+.read()                     reads contents of the whole file
+.readline()                 reads single line of text file
+.truncate                   empties contents of files
+.write(stuff)               write stuff to the file
