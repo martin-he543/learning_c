@@ -31,14 +31,32 @@ ESCAPE SEQUENCES
 ____________________________________
 SYSTEM IMPORTS
 from sys import argv        imports console argument variables (i.e. python3 filename arguments)
+from os.path import exists  checks existence of a file
+                            exists(filename) = {TRUE/FALSE}
 
 ____________________________________
 READING/WRITING TEXT FILES
-.open(filename,'_')         opens a file (optional modes: '_')
+len()                       gives the length of the file
+open(filename,'_')          opens a file (optional modes: '_')
                             'r' - reads the file, DEFAULT
                             'w' - with writing privileges, truncating first
                             'x' - creates new file
+
+.close()                    closes a file (when necessary)
 .read()                     reads contents of the whole file
-.readline()                 reads single line of text file
+.readline()                 reads single line of text file, before progressing
+.seek(number)               skips to the 'number'th character in a document
+                            .seek(0) - rewinds the document
 .truncate                   empties contents of files
-.write(stuff)               write stuff to the file
+.write(stuff)               write stuff to the file, can be NEW FILE
+
+____________________________________
+FUNCTIONS
+def function(*args)         *args returns the inputted arguments, but need to unpack
+
+____________________________________
+PRINT STATEMENTS
+print("%dPut your formatters%r"%(variables))      print with format characters
+print("""                                         multi-line print statements
+Print several lines
+""")
