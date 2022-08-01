@@ -57,6 +57,14 @@ def function(*args)         *args returns the inputted arguments, but need to un
 ____________________________________
 PRINT STATEMENTS
 print("%dPut your formatters%r"%(variables))      print with format characters
+
 print("""                                         multi-line print statements
 Print several lines
 """)
+
+____________________________________
+GENERAL
+sorted( )                   returns words in ascending order
+
+.pop(0)                     returns word in index given by number (inc. -1)
+.split(' ')                 splits a string by characters, returns array
