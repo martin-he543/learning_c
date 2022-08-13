@@ -1,0 +1,60 @@
+C OPERATORS
+Arithmetic Operators
++       add
+-       subtract
+*       multiply
+/       divide
+%       modulus
+++      increment
+--      decrement
+
+Relational Operators (Compare Equalities)
+==      equal
+!=      not equal
+>       greater than
+<       less than
+>=      greater than or equal
+<=      less than or equal
+
+Logical Operators (Logic Gates)
+&&      LOGICAL and
+||      LOGICAL or
+!       LOGICAL not
+? :     LOGICAL ternary
+
+Bitwise Operators (Alter Bits)
+&       BITWISE and
+|       BITWISE or
+^       BITWISE xor
+~       BITWISE one's complement
+<<      BITWISE shift left
+>>      BITWISE shift right
+
+Assignment Operators (combined with BITWISE Operators)
+=       ASSIGN equal
++=      ASSIGN plus equal
+-=      ASSIGN minus equal
+*=      ASSIGN multiply equal
+/=      ASSIGN divide equal
+%=      ASSIGN modulus equal
+<<=     ASSIGN shift-left equal
+>>=     ASSIGN shift-right equal
+&=      ASSIGN and-equal
+^=      ASSIGN xor-equal
+|=      ASSIGN or-equal
+
+Data Operators (deal with Data Structures, e.g. pointers, member access)
+sizeof()    Get the size of
+[]          Array subscript
+&           The address of
+*           The value of
+->          Structure dereference
+.           Structure reference
+
+Miscellaneous Operators
+,       Comma
+()      Parentheses
+{}      Braces
+:       Colon
+//      Line Comment
+/* */   Multi-line Comment
