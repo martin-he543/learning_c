@@ -1,0 +1,128 @@
+C SYNTAX Structures
+
+An if-statement:
+
+if(TEST) {
+    CODE;
+} else if (TEST) {
+    CODE;
+} else {
+    CODE;
+}
+______________________________________________________
+
+A switch-statement:
+
+switch (OPERAND) {
+    case CONSTANT:
+        CODE;
+        break;
+    default:
+        CODE;
+}
+______________________________________________________
+
+A while loop:
+
+while (TEST) {
+        CODE;
+}
+______________________________________________________
+
+A while-continue loop:
+
+while (TEST) {
+    if (OTHER_TEST) {
+        continue;
+    }
+    CODE;
+}
+______________________________________________________
+
+A while-break loop:
+
+while (TEST) {
+    if (OTHER_TEST) {
+        break;
+    }
+    CODE;
+}
+______________________________________________________
+
+A do-while loop:
+Inverted version of the while loop. Can have continue or break.
+Tests to see if it needs to run again.
+
+do {
+    CODE;
+} while (TEST);
+______________________________________________________
+
+A for loop:
+
+for (INIT; TEST; POST) {
+    CODE;
+}
+______________________________________________________
+
+An enum statement:
+Creates a set of integer constants.
+
+enum { CONST1, CONST2, CONST3 } NAME;
+
+______________________________________________________
+
+A goto statement:
+Jump to a label, only used in a few useful situations like error detection and exiting.
+
+if (ERROR_TEST) {
+    goto fail;
+}
+
+fail:
+    CODE;
+______________________________________________________
+
+Function:
+
+TYPE NAME(ARG1, ARG2, ..) {
+    CODE;
+    return VALUE;
+}
+
+int name(arg1,arg2) {
+    CODE;
+    return 0;
+}
+______________________________________________________
+
+A typedef statement:
+Defines a new type.
+
+typedef DEFINITION IDENTIFIER;
+typedef unsigned char byte;
+
+______________________________________________________
+
+A struct statement:
+Packaging of many base data types into a single concept, which are used heavily in C.
+
+struct NAME {
+    ELEMENTS;
+} [VARIABLE_NAME];
+
+Where [VARIABLE_NAME] is optional (preferred not used except in a few cases).
+Commonly combined with typedef like this:
+
+typedef struct [STRUCT_NAME] {
+    ELEMENTS;
+} IDENTIFIER;
+
+______________________________________________________
+
+A union statement:
+Creates something like a struct, but the elements will overlap in memory.
+
+union NAME {
+    ELEMENTS;
+} [VARIABLE_NAME];

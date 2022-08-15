@@ -1,4 +1,6 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+make: *** No rule to make target 'all'.  Stop.
+
 # GNU Make 4.3
 # Built for x86_64-pc-linux-gnu
 # Copyright (C) 1988-2020 Free Software Foundation, Inc.
@@ -6,7 +8,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sat Aug 13 17:17:47 2022
+# Make data base, printed on Mon Aug 15 12:08:37 2022
 
 # Variables
 
@@ -24,8 +26,6 @@ SNAP_INSTANCE_KEY =
 GJS_DEBUG_OUTPUT = stderr
 # environment
 VSCODE_CWD = /home/martin
-# environment
-WINDOWPATH = 2
 # default
 MAKE_COMMAND := make
 # environment
@@ -45,7 +45,7 @@ PWD = /home/martin/Workspaces/learning_c
 # automatic
 %D = $(patsubst %/,%,$(dir $%))
 # environment
-XDG_DATA_DIRS = /usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
+XDG_DATA_DIRS = /usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
 # automatic
 ^D = $(patsubst %/,%,$(dir $^))
 # automatic
@@ -55,7 +55,7 @@ VSCODE_CODE_CACHE_PATH = /home/martin/.config/Code/CachedData/6d9b74a70ca9c7733b
 # environment
 LANG = C
 # environment
-XAUTHORITY = /run/user/1001/.mutter-Xwaylandauth.C1UZQ1
+XAUTHORITY = /run/user/1001/.mutter-Xwaylandauth.OV5XQ1
 # default
 .LOADED := 
 # default
@@ -91,7 +91,7 @@ SNAP_REEXEC =
 # automatic
 @F = $(notdir $@)
 # environment
-VSCODE_PID = 17643
+VSCODE_PID = 13639
 # environment
 XDG_SESSION_TYPE = wayland
 # automatic
@@ -99,7 +99,7 @@ XDG_SESSION_TYPE = wayland
 # environment
 BAMF_DESKTOP_FILE_HINT = /var/lib/snapd/desktop/applications/code_code.desktop
 # environment
-SESSION_MANAGER = local/hp:@/tmp/.ICE-unix/9357,unix/hp:/tmp/.ICE-unix/9357
+SESSION_MANAGER = local/hp:@/tmp/.ICE-unix/1860,unix/hp:/tmp/.ICE-unix/1860
 # automatic
 *F = $(notdir $*)
 # environment
@@ -126,12 +126,14 @@ GJS_DEBUG_TOPICS = JS ERROR;JS LOG
 SHLVL = 0
 # environment
 MAKELEVEL := 0
+# environment
+IM_CONFIG_CHECK_ENV = 1
 # default
 MAKE = $(MAKE_COMMAND)
 # environment
 SNAP_COOKIE = 1hmzYwDD8fRqCDM7eJ4MyAgrGaxlIU8rfaIExkGSroPj6ne6GgJi
 # environment
-PATH = /home/martin/.local/bin:/home/martin/.local/bin:/home/martin/.local/bin:/home/martin/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin
+PATH = /home/martin/.local/bin:/home/martin/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin
 # default
 MAKEFILES := 
 # environment
@@ -143,7 +145,7 @@ SNAP_USER_COMMON = /home/martin/snap/code/common
 # environment
 SNAP = /snap/code/104
 # environment
-INVOCATION_ID = 157bf8d0c27743bfad02df0aa2610c57
+INVOCATION_ID = aa9b2434148546b3a07444c9a5defcbe
 # environment
 SNAP_REVISION = 104
 # environment
@@ -177,7 +179,7 @@ SNAP_ARCH = amd64
 # makefile
 .DEFAULT_GOAL := 
 # environment
-SYSTEMD_EXEC_PID = 9377
+SYSTEMD_EXEC_PID = 1893
 # environment
 DISPLAY = :0
 # environment
@@ -193,19 +195,17 @@ SNAP_DATA = /var/snap/code/104
 # environment
 SNAP_CONTEXT = 1hmzYwDD8fRqCDM7eJ4MyAgrGaxlIU8rfaIExkGSroPj6ne6GgJi
 # environment
-MANAGERPID = 1729
+MANAGERPID = 1661
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 17596
+GIO_LAUNCHED_DESKTOP_FILE_PID = 13600
 # environment
 _ = /snap/code/104/usr/share/code/code
 # environment
 XDG_RUNTIME_DIR = /run/user/1001
 # environment
-GPG_AGENT_INFO = /run/user/1001/gnupg/S.gpg-agent:0:1
-# environment
 GDK_PIXBUF_MODULE_FILE = /home/martin/snap/code/common/.cache/gdk-pixbuf-loaders.cache
 # environment
-JOURNAL_STREAM = 8:83989
+JOURNAL_STREAM = 8:34176
 # environment
 XDG_SESSION_CLASS = user
 # environment
@@ -224,6 +224,8 @@ SNAP_NAME = code
 GSETTINGS_SCHEMA_DIR = /snap/code/104/usr/share/glib-2.0/schemas
 # environment
 MATHEMATICA_HOME = /usr/local/Wolfram/Mathematica/13.1
+# environment
+IM_CONFIG_PHASE = 1
 # default
 .RECIPEPREFIX := 
 # automatic
@@ -281,9 +283,6 @@ Makefile:
 #  File has not been updated.
 
 # Not a target:
- 
-make: *** No rule to make target 'all'.  Stop.
-
 all:
 #  Command line target.
 #  Implicit rule search has been done.
@@ -291,6 +290,7 @@ all:
 #  File has not been updated.
 
 # Not a target:
+ 
 makefile:
 #  Implicit rule search has been done.
 #  File does not exist.
@@ -318,6 +318,6 @@ GNUmakefile:
 # strcache performance: lookups = 24 / hit rate = 12%
 # hash-table stats:
 # Load=21/8192=0%, Rehash=0, Collisions=0/24=0%
-# Finished Make data base on Sat Aug 13 17:17:47 2022
+# Finished Make data base on Mon Aug 15 12:08:37 2022
 
  
